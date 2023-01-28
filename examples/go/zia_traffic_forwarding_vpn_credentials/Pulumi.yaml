@@ -1,0 +1,3 @@
+name: zia_traffic_forwarding_vpn_credentials
+runtime: go
+description: A minimal Go Pulumi program
