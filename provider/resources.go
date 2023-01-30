@@ -75,6 +75,7 @@ func Provider() tfbridge.ProviderInfo {
 		Keywords:                []string{"pulumi", "zia", "zscaler", "category/cloud"},
 		TFProviderLicense:       refProviderLicense(tfbridge.MITLicenseType),
 		License:                 "MIT",
+		LogoURL:                 "https://raw.githubusercontent.com/zscaler/pulumi-zia/main/assets/svg/logo.svg", //nolint:golint,lll
 		Homepage:                "https://www.zscaler.com",
 		Repository:              "https://github.com/zscaler/pulumi-zia",
 		PluginDownloadURL:       "github://api.github.com/zscaler",
