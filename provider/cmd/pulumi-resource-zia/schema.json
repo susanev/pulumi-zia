@@ -12,6 +12,7 @@
     "license": "MIT",
     "attribution": "This Pulumi package is based on the [`zia` Terraform Provider](https://github.com/zscaler/terraform-provider-zia).",
     "repository": "https://github.com/zscaler/pulumi-zia",
+    "logoUrl": "https://raw.githubusercontent.com/zscaler/pulumi-zia/main/assets/svg/logo.svg",
     "pluginDownloadURL": "github://api.github.com/zscaler",
     "publisher": "Zscaler",
     "meta": {
