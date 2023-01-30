@@ -5,241 +5,241 @@
 from . import _utilities
 import typing
 # Export this package's modules as members:
-from .get_zia_activation_status import *
-from .get_zia_admin_roles import *
-from .get_zia_admin_users import *
-from .get_zia_auth_settings_urls import *
-from .get_zia_department_management import *
-from .get_zia_device_groups import *
-from .get_zia_devices import *
-from .get_zia_firewall_filtering_application import *
-from .get_zia_firewall_filtering_application_groups import *
-from .get_zia_firewall_filtering_destination_groups import *
-from .get_zia_firewall_filtering_network_service_groups import *
-from .get_zia_firewall_filtering_network_services import *
-from .get_zia_firewall_filtering_rule import *
-from .get_zia_firewall_filtering_source_ip_groups import *
-from .get_zia_group_management import *
-from .get_zia_location_groups import *
-from .get_zia_location_management import *
-from .get_zia_rule_labels import *
-from .get_zia_security_settings import *
-from .get_zia_time_window import *
-from .get_zia_traffic_forwarding_gre_internal_ip_range import *
-from .get_zia_traffic_forwarding_gre_tunnel import *
-from .get_zia_traffic_forwarding_gre_tunnel_info import *
-from .get_zia_traffic_forwarding_node_vips import *
-from .get_zia_traffic_forwarding_static_ip import *
-from .get_zia_traffic_forwarding_vip_recommended_list import *
-from .get_zia_traffic_forwarding_vpn_credentials import *
-from .get_ziadlp_dictionaries import *
-from .get_ziadlp_engines import *
-from .get_ziadlp_notification_templates import *
-from .get_ziadlp_web_rules import *
-from .get_ziaurl_categories import *
-from .get_ziaurl_filtering_rules import *
-from .get_ziauser_management import *
 from .provider import *
-from .zia_activation_status import *
-from .zia_admin_users import *
-from .zia_auth_settings_urls import *
-from .zia_firewall_filtering_application_groups import *
-from .zia_firewall_filtering_destination_groups import *
-from .zia_firewall_filtering_network_services import *
-from .zia_firewall_filtering_rule import *
-from .zia_firewall_filtering_service_groups import *
-from .zia_firewall_filtering_source_groups import *
-from .zia_location_management import *
-from .zia_rule_labels import *
-from .zia_security_settings import *
-from .zia_traffic_forwarding_gre_tunnel import *
-from .zia_traffic_forwarding_static_ip import *
-from .zia_traffic_forwarding_vpn_credentials import *
-from .ziadlp_dictionaries import *
-from .ziadlp_notification_templates import *
-from .ziadlp_web_rules import *
-from .ziaurl_categories import *
-from .ziaurl_filtering_rules import *
-from .ziauser_management import *
-from ._inputs import *
-from . import outputs
 
 # Make subpackages available:
 if typing.TYPE_CHECKING:
+    import zscaler_pulumi_zia.activation as __activation
+    activation = __activation
+    import zscaler_pulumi_zia.adminroles as __adminroles
+    adminroles = __adminroles
+    import zscaler_pulumi_zia.adminusers as __adminusers
+    adminusers = __adminusers
+    import zscaler_pulumi_zia.authsettingsurls as __authsettingsurls
+    authsettingsurls = __authsettingsurls
     import zscaler_pulumi_zia.config as __config
     config = __config
+    import zscaler_pulumi_zia.departments as __departments
+    departments = __departments
+    import zscaler_pulumi_zia.devicegroups as __devicegroups
+    devicegroups = __devicegroups
+    import zscaler_pulumi_zia.devices as __devices
+    devices = __devices
+    import zscaler_pulumi_zia.dlp as __dlp
+    dlp = __dlp
+    import zscaler_pulumi_zia.firewall as __firewall
+    firewall = __firewall
+    import zscaler_pulumi_zia.groups as __groups
+    groups = __groups
+    import zscaler_pulumi_zia.locationgroups as __locationgroups
+    locationgroups = __locationgroups
+    import zscaler_pulumi_zia.locationmanagement as __locationmanagement
+    locationmanagement = __locationmanagement
+    import zscaler_pulumi_zia.rulelabels as __rulelabels
+    rulelabels = __rulelabels
+    import zscaler_pulumi_zia.securitysettings as __securitysettings
+    securitysettings = __securitysettings
+    import zscaler_pulumi_zia.timewindow as __timewindow
+    timewindow = __timewindow
+    import zscaler_pulumi_zia.trafficforwarding as __trafficforwarding
+    trafficforwarding = __trafficforwarding
+    import zscaler_pulumi_zia.urlcategory as __urlcategory
+    urlcategory = __urlcategory
+    import zscaler_pulumi_zia.urlfiltering as __urlfiltering
+    urlfiltering = __urlfiltering
+    import zscaler_pulumi_zia.users as __users
+    users = __users
 else:
+    activation = _utilities.lazy_import('zscaler_pulumi_zia.activation')
+    adminroles = _utilities.lazy_import('zscaler_pulumi_zia.adminroles')
+    adminusers = _utilities.lazy_import('zscaler_pulumi_zia.adminusers')
+    authsettingsurls = _utilities.lazy_import('zscaler_pulumi_zia.authsettingsurls')
     config = _utilities.lazy_import('zscaler_pulumi_zia.config')
+    departments = _utilities.lazy_import('zscaler_pulumi_zia.departments')
+    devicegroups = _utilities.lazy_import('zscaler_pulumi_zia.devicegroups')
+    devices = _utilities.lazy_import('zscaler_pulumi_zia.devices')
+    dlp = _utilities.lazy_import('zscaler_pulumi_zia.dlp')
+    firewall = _utilities.lazy_import('zscaler_pulumi_zia.firewall')
+    groups = _utilities.lazy_import('zscaler_pulumi_zia.groups')
+    locationgroups = _utilities.lazy_import('zscaler_pulumi_zia.locationgroups')
+    locationmanagement = _utilities.lazy_import('zscaler_pulumi_zia.locationmanagement')
+    rulelabels = _utilities.lazy_import('zscaler_pulumi_zia.rulelabels')
+    securitysettings = _utilities.lazy_import('zscaler_pulumi_zia.securitysettings')
+    timewindow = _utilities.lazy_import('zscaler_pulumi_zia.timewindow')
+    trafficforwarding = _utilities.lazy_import('zscaler_pulumi_zia.trafficforwarding')
+    urlcategory = _utilities.lazy_import('zscaler_pulumi_zia.urlcategory')
+    urlfiltering = _utilities.lazy_import('zscaler_pulumi_zia.urlfiltering')
+    users = _utilities.lazy_import('zscaler_pulumi_zia.users')
 
 _utilities.register(
     resource_modules="""
 [
  {
   "pkg": "zia",
-  "mod": "index/zIAActivationStatus",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Activation/activationStatus",
+  "fqn": "zscaler_pulumi_zia.activation",
   "classes": {
-   "zia:index/zIAActivationStatus:ZIAActivationStatus": "ZIAActivationStatus"
+   "zia:Activation/activationStatus:ActivationStatus": "ActivationStatus"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAAdminUsers",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "AdminUsers/adminUsers",
+  "fqn": "zscaler_pulumi_zia.adminusers",
   "classes": {
-   "zia:index/zIAAdminUsers:ZIAAdminUsers": "ZIAAdminUsers"
+   "zia:AdminUsers/adminUsers:AdminUsers": "AdminUsers"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAAuthSettingsURLs",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "AuthSettingsUrls/authSettingsURLs",
+  "fqn": "zscaler_pulumi_zia.authsettingsurls",
   "classes": {
-   "zia:index/zIAAuthSettingsURLs:ZIAAuthSettingsURLs": "ZIAAuthSettingsURLs"
+   "zia:AuthSettingsUrls/authSettingsURLs:AuthSettingsURLs": "AuthSettingsURLs"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIADLPDictionaries",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "DLP/dLPDictionaries",
+  "fqn": "zscaler_pulumi_zia.dlp",
   "classes": {
-   "zia:index/zIADLPDictionaries:ZIADLPDictionaries": "ZIADLPDictionaries"
+   "zia:DLP/dLPDictionaries:DLPDictionaries": "DLPDictionaries"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIADLPNotificationTemplates",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "DLP/dLPNotificationTemplates",
+  "fqn": "zscaler_pulumi_zia.dlp",
   "classes": {
-   "zia:index/zIADLPNotificationTemplates:ZIADLPNotificationTemplates": "ZIADLPNotificationTemplates"
+   "zia:DLP/dLPNotificationTemplates:DLPNotificationTemplates": "DLPNotificationTemplates"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIADLPWebRules",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "DLP/dLPWebRules",
+  "fqn": "zscaler_pulumi_zia.dlp",
   "classes": {
-   "zia:index/zIADLPWebRules:ZIADLPWebRules": "ZIADLPWebRules"
+   "zia:DLP/dLPWebRules:DLPWebRules": "DLPWebRules"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAFirewallFilteringApplicationGroups",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Firewall/firewallFilteringApplicationGroups",
+  "fqn": "zscaler_pulumi_zia.firewall",
   "classes": {
-   "zia:index/zIAFirewallFilteringApplicationGroups:ZIAFirewallFilteringApplicationGroups": "ZIAFirewallFilteringApplicationGroups"
+   "zia:Firewall/firewallFilteringApplicationGroups:FirewallFilteringApplicationGroups": "FirewallFilteringApplicationGroups"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAFirewallFilteringDestinationGroups",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Firewall/firewallFilteringDestinationGroups",
+  "fqn": "zscaler_pulumi_zia.firewall",
   "classes": {
-   "zia:index/zIAFirewallFilteringDestinationGroups:ZIAFirewallFilteringDestinationGroups": "ZIAFirewallFilteringDestinationGroups"
+   "zia:Firewall/firewallFilteringDestinationGroups:FirewallFilteringDestinationGroups": "FirewallFilteringDestinationGroups"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAFirewallFilteringNetworkServices",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Firewall/firewallFilteringNetworkServices",
+  "fqn": "zscaler_pulumi_zia.firewall",
   "classes": {
-   "zia:index/zIAFirewallFilteringNetworkServices:ZIAFirewallFilteringNetworkServices": "ZIAFirewallFilteringNetworkServices"
+   "zia:Firewall/firewallFilteringNetworkServices:FirewallFilteringNetworkServices": "FirewallFilteringNetworkServices"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAFirewallFilteringRule",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Firewall/firewallFilteringRule",
+  "fqn": "zscaler_pulumi_zia.firewall",
   "classes": {
-   "zia:index/zIAFirewallFilteringRule:ZIAFirewallFilteringRule": "ZIAFirewallFilteringRule"
+   "zia:Firewall/firewallFilteringRule:FirewallFilteringRule": "FirewallFilteringRule"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAFirewallFilteringServiceGroups",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Firewall/firewallFilteringServiceGroups",
+  "fqn": "zscaler_pulumi_zia.firewall",
   "classes": {
-   "zia:index/zIAFirewallFilteringServiceGroups:ZIAFirewallFilteringServiceGroups": "ZIAFirewallFilteringServiceGroups"
+   "zia:Firewall/firewallFilteringServiceGroups:FirewallFilteringServiceGroups": "FirewallFilteringServiceGroups"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAFirewallFilteringSourceGroups",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Firewall/firewallFilteringSourceGroups",
+  "fqn": "zscaler_pulumi_zia.firewall",
   "classes": {
-   "zia:index/zIAFirewallFilteringSourceGroups:ZIAFirewallFilteringSourceGroups": "ZIAFirewallFilteringSourceGroups"
+   "zia:Firewall/firewallFilteringSourceGroups:FirewallFilteringSourceGroups": "FirewallFilteringSourceGroups"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIALocationManagement",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "LocationManagement/locationManagement",
+  "fqn": "zscaler_pulumi_zia.locationmanagement",
   "classes": {
-   "zia:index/zIALocationManagement:ZIALocationManagement": "ZIALocationManagement"
+   "zia:LocationManagement/locationManagement:LocationManagement": "LocationManagement"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIARuleLabels",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "RuleLabels/ruleLabels",
+  "fqn": "zscaler_pulumi_zia.rulelabels",
   "classes": {
-   "zia:index/zIARuleLabels:ZIARuleLabels": "ZIARuleLabels"
+   "zia:RuleLabels/ruleLabels:RuleLabels": "RuleLabels"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIASecuritySettings",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "SecuritySettings/securitySettings",
+  "fqn": "zscaler_pulumi_zia.securitysettings",
   "classes": {
-   "zia:index/zIASecuritySettings:ZIASecuritySettings": "ZIASecuritySettings"
+   "zia:SecuritySettings/securitySettings:SecuritySettings": "SecuritySettings"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIATrafficForwardingGRETunnel",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "TrafficForwarding/trafficForwardingGRETunnel",
+  "fqn": "zscaler_pulumi_zia.trafficforwarding",
   "classes": {
-   "zia:index/zIATrafficForwardingGRETunnel:ZIATrafficForwardingGRETunnel": "ZIATrafficForwardingGRETunnel"
+   "zia:TrafficForwarding/trafficForwardingGRETunnel:TrafficForwardingGRETunnel": "TrafficForwardingGRETunnel"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIATrafficForwardingStaticIP",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "TrafficForwarding/trafficForwardingStaticIP",
+  "fqn": "zscaler_pulumi_zia.trafficforwarding",
   "classes": {
-   "zia:index/zIATrafficForwardingStaticIP:ZIATrafficForwardingStaticIP": "ZIATrafficForwardingStaticIP"
+   "zia:TrafficForwarding/trafficForwardingStaticIP:TrafficForwardingStaticIP": "TrafficForwardingStaticIP"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIATrafficForwardingVPNCredentials",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "TrafficForwarding/trafficForwardingVPNCredentials",
+  "fqn": "zscaler_pulumi_zia.trafficforwarding",
   "classes": {
-   "zia:index/zIATrafficForwardingVPNCredentials:ZIATrafficForwardingVPNCredentials": "ZIATrafficForwardingVPNCredentials"
+   "zia:TrafficForwarding/trafficForwardingVPNCredentials:TrafficForwardingVPNCredentials": "TrafficForwardingVPNCredentials"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAURLCategories",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "URLCategory/uRLCategories",
+  "fqn": "zscaler_pulumi_zia.urlcategory",
   "classes": {
-   "zia:index/zIAURLCategories:ZIAURLCategories": "ZIAURLCategories"
+   "zia:URLCategory/uRLCategories:URLCategories": "URLCategories"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAURLFilteringRules",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "URLFiltering/uRLFilteringRules",
+  "fqn": "zscaler_pulumi_zia.urlfiltering",
   "classes": {
-   "zia:index/zIAURLFilteringRules:ZIAURLFilteringRules": "ZIAURLFilteringRules"
+   "zia:URLFiltering/uRLFilteringRules:URLFilteringRules": "URLFilteringRules"
   }
  },
  {
   "pkg": "zia",
-  "mod": "index/zIAUserManagement",
-  "fqn": "zscaler_pulumi_zia",
+  "mod": "Users/userManagement",
+  "fqn": "zscaler_pulumi_zia.users",
   "classes": {
-   "zia:index/zIAUserManagement:ZIAUserManagement": "ZIAUserManagement"
+   "zia:Users/userManagement:UserManagement": "UserManagement"
   }
  }
 ]
