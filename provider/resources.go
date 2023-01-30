@@ -78,7 +78,6 @@ func Provider() tfbridge.ProviderInfo {
 		Homepage:                "https://www.zscaler.com",
 		Repository:              "https://github.com/zscaler/pulumi-zia",
 		PluginDownloadURL:       "github://api.github.com/zscaler",
-		LogoURL:                 "https://www.zscaler.com/themes/custom/zscaler/logo.svg", //nolint:golint,lll
 		GitHubOrg:               "zscaler",
 		Publisher:               "Zscaler",
 		DisplayName:             "Zscaler Internet Access",
