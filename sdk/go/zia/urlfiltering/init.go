@@ -7,8 +7,8 @@ import (
 	"fmt"
 
 	"github.com/blang/semver"
-	"github.com/zscaler/pulumi-zia/sdk/go/zia"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+	"github.com/zscaler/pulumi-zia/sdk/go/zia"
 )
 
 type module struct {

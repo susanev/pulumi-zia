@@ -22,10 +22,10 @@ import (
 //
 //	"fmt"
 //
+//	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 //	"github.com/zscaler/pulumi-zia/sdk/go/zia/AdminRoles"
 //	"github.com/zscaler/pulumi-zia/sdk/go/zia/AdminUsers"
 //	"github.com/zscaler/pulumi-zia/sdk/go/zia/Departments"
-//	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 //
 // )
 //

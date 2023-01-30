@@ -297,7 +297,7 @@ func Provider() tfbridge.ProviderInfo {
 		},
 		Golang: &tfbridge.GolangInfo{
 			ImportBasePath: filepath.Join(
-				fmt.Sprintf("github.com/pulumi/pulumi-%[1]s/sdk/", ziaPkg),
+				fmt.Sprintf("github.com/zscaler/pulumi-%[1]s/sdk/", ziaPkg),
 				tfbridge.GetModuleMajorVersion(version.Version),
 				"go",
 				ziaPkg,

@@ -19,8 +19,8 @@ import (
 //
 // import (
 //
-//	"github.com/zscaler/pulumi-zia/sdk/go/zia/Firewall"
 //	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+//	"github.com/zscaler/pulumi-zia/sdk/go/zia/Firewall"
 //
 // )
 //

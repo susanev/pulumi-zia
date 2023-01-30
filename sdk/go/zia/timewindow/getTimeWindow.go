@@ -19,8 +19,8 @@ import (
 //
 // import (
 //
-//	"github.com/zscaler/pulumi-zia/sdk/go/zia/TimeWindow"
 //	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+//	"github.com/zscaler/pulumi-zia/sdk/go/zia/TimeWindow"
 //
 // )
 //
@@ -43,8 +43,8 @@ import (
 //
 // import (
 //
-//	"github.com/zscaler/pulumi-zia/sdk/go/zia/TimeWindow"
 //	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+//	"github.com/zscaler/pulumi-zia/sdk/go/zia/TimeWindow"
 //
 // )
 //
@@ -67,8 +67,8 @@ import (
 //
 // import (
 //
-//	"github.com/zscaler/pulumi-zia/sdk/go/zia/TimeWindow"
 //	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+//	"github.com/zscaler/pulumi-zia/sdk/go/zia/TimeWindow"
 //
 // )
 //
